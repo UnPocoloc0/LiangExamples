@@ -1,9 +1,12 @@
 public class TestPassArray {
   
-    public static void main(String[] args) {
-        int[] a = {1, 2};
+  
+  public static void main(String[] args) {
+    
+    int[] a = {1, 2};
     /** Swap two variables */
-        // Swap elements using the swap method
+    
+    // Swap elements using the swap method
     System.out.println("Before invoking swap"); 
     System.out.println("array is {" + a[0] + ", " + a[1] + "}"); 
     // Tämän metodin kutsuminen ei muuta alkuperästä taulukkoa
@@ -30,9 +33,13 @@ public class TestPassArray {
   // parametriksi valitetaan viittaus kopiona
   /** Swap the first two elements in the array */
   public static void swapFirstTwoInArray(int[] array) { 
-        int temp = array[0];
+    
+    int temp = array[0];
     array[0] = array[1];
-    array[1] = temp;      }  }
+    array[1] = temp;
+    
+  }  
+}
 
 /*
 
@@ -165,4 +172,4 @@ Java antaa metodille aina kopion.
 
 Aikavaativuus O(n), koska ei ole silmukoita, ei riippuvuutta syötön koosta ja kaikki operaatiot ovat vakioita. 
 */
-
+
