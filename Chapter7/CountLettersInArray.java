@@ -1,18 +1,32 @@
 public class CountLettersInArray {  
-    public static void main(String[] args) {
-        // Declare and create an array
-        char[] chars = createArray();
-        // Display the array
-        System.out.println("The lowercase letters are:");
-        displayArray(chars);
-        int[] counts = countLetters(chars);
-        // Display counts
-        System.out.println();    System.out.println("The occurrences of each letter are:");     displayCounts(counts);
-      }
+  
+  public static void main(String[] args) {
+    
+    // Declare and create an array
+    
+    char[] chars = createArray();
+    
+    // Display the array
+    
+    System.out.println("The lowercase letters are:");
+    
+    displayArray(chars);
+    
+    int[] counts = countLetters(chars);
+    
+    // Display counts
+    
+    System.out.println();
+    System.out.println("The occurrences of each letter are:"); 
+    displayCounts(counts);
+    
+  }
   
   /** Create an array of characters */
-    public static char[] createArray() {
-        // Declare an array of characters and Array it
+  
+  public static char[] createArray() {
+    
+    // Declare an array of characters and Array it
     char[] chars = new char[100];
     // Create lowercase letters randomly and assign them to the array
     for (int i = 0; i < chars.length; i++)
@@ -20,7 +34,8 @@ public class CountLettersInArray {
     return chars;
     
   }
-    public static void displayArray(char[] chars) {
+  
+  public static void displayArray(char[] chars) {
     // Display the characters in the array 20 on each line
     for (int i = 0; i < chars.length; i++) { 
       // rivinvaihto tulee 20:n merkin jälkeen
@@ -31,8 +46,10 @@ public class CountLettersInArray {
       System.out.print(chars[i] + " ");
     }
   } 
-    public static int[] countLetters(char[] chars) {
-        // Declare and create an array of 26 int
+  
+  public static int[] countLetters(char[] chars) {
+    
+    // Declare and create an array of 26 int
     int[] counts = new int[26];
     // For each lowercase letter in the array, count it
     for (int i = 0; i < chars.length; i++)
@@ -42,7 +59,8 @@ public class CountLettersInArray {
     return counts;
   }
   
-  /** Display counts */
+
+  /** Display counts */
   public static void displayCounts(int[] counts) { 
     
     for (int i = 0; i < counts.length; i++) {
@@ -52,8 +70,10 @@ public class CountLettersInArray {
       else
       System.out.print(counts[i] + " " + (char)(i + 'a') + " ");
     }
-      }
-  } // class
+    
+  }
+  
+} // class
 
 class RandomCharacter {
   
