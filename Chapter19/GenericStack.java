@@ -38,27 +38,40 @@ public class GenericStack<E> {
   }
   
   // Apumetodit
-    public int getSize() {
+  
+  public int getSize() {
     // Tämä metodi kuuluu vain ArrayList-luokalle
-        return list.size();
-      }
-    public E peek() {
+    
+    return list.size();
+    
+  }
+  
+  public E peek() {
     // Kutsutaan listan omaa metodia
     // tämä kertoo pinon koon ja kuuluukin Generic Stack-luokalle
-        return list.get(getSize() - 1);
+    
+    return list.get(getSize() - 1);
   }
-    public void push(E o) {
-        list.add(o);
+  
+  public void push(E o) {
+    
+    list.add(o);
   }
-      public boolean isEmpty() {
-        return list.isEmpty();
+  
+  
+  public boolean isEmpty() {
+    
+    return list.isEmpty();
   }
-      public E pop() {
+  
+  
+  public E pop() {
     
     E o = list.get(getSize() - 1); 
     list.remove(getSize() - 1); 
     return o;
-      }
+    
+  }
   // Metodi yli kirjoitetaan jotta oli on sisältä voidaan tulostaa ymmärrettävässä muodossa 
   @Override
   public String toString() {
