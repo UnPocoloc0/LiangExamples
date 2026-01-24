@@ -1,6 +1,8 @@
 import java.util.*;
-public class TestTreeSet {
-    public static void main(String[] args) {
+
+public class TestTreeSet {
+  
+  public static void main(String[] args) {
     
     // Create a hash set
     Set<String> set = new HashSet<>();
@@ -32,10 +34,13 @@ import java.util.*;
     System.out.println("ceiling(\"P\"): " + treeSet.ceiling("P")); 
     System.out.println("pollFirst(): " + treeSet.pollFirst()); 
     System.out.println("pollLast(): " + treeSet.pollLast()); 
-    System.out.println("New tree set: " + treeSet);  }
-  }
+    System.out.println("New tree set: " + treeSet);
+  }
+  
+}
 
-/*
+
+/*
 1️⃣ YLÄTASON SUUNNITELMA
 
 Tavoite:
