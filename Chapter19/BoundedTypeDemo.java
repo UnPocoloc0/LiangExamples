@@ -7,7 +7,8 @@ public class BoundedTypeDemo {
     System.out.println("Same area? " + equalArea(rectangle, circle));
     
   }
-    public static <E extends GeometricObject> boolean equalArea(E object1, E object2) {
+  
+  public static <E extends GeometricObject> boolean equalArea(E object1, E object2) {
     return object1.getArea() == object2.getArea();
     
   }
