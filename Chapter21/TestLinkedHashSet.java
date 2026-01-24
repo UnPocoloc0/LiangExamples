@@ -1,6 +1,8 @@
 import java.util.*;
-public class TestLinkedHashSet {
-		public static void main(String[] args) {
+
+public class TestLinkedHashSet {
+	
+	public static void main(String[] args) {
 		
 		// Create a hash set
 		Set<String> set = new LinkedHashSet<>();
@@ -19,7 +21,9 @@ import java.util.*;
 		
 		// Display the elements in the hash set
 		for (String element: set) 
-		System.out.print(element.toLowerCase() + " ");	} }
+		System.out.print(element.toLowerCase() + " ");
+	} 
+}
 
 /*
 1️⃣ YLÄTASON SUUNNITELMA
