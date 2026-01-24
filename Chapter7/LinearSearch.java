@@ -16,7 +16,8 @@ public class LinearSearch {
 	/** The method for finding a key in the list */
 	public static int linearSearch(int[] list, int key) { 
 		// Palautetaan luvun ensimmäisen esiintymän indeksi
-		for (int i = 0; i < list.length; i++) {			if (key == list[i])
+		for (int i = 0; i < list.length; i++) {
+			if (key == list[i])
 			return i;
 		}
 		// Jos numeroa ei löydy listasta
