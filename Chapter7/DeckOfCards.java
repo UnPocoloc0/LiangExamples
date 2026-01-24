@@ -1,18 +1,24 @@
 public class DeckOfCards {
-    public static void main(String[] args) {
+  
+  public static void main(String[] args) {
     
     // Pakan koko
-        int[] deck = new int[52];
+    
+    int[] deck = new int[52];
     
     // Maat alustettuna
-        String[] suits = {"Spades", "Hearts", "Diamonds", "Clubs"};
+    
+    String[] suits = {"Spades", "Hearts", "Diamonds", "Clubs"};
     
     // Korttien arvot
-        String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9",
-            "10", "Jack", "Queen", "King"};
+    
+    String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9",
+      
+      "10", "Jack", "Queen", "King"};
     
     // Täytetään pakka kaikilla 52 eri kortilla järjestyksessä
-        for (int i = 0; i < deck.length; i++) {
+    
+    for (int i = 0; i < deck.length; i++) {
       
       deck[i] = i;
       
@@ -20,14 +26,16 @@ public class DeckOfCards {
     
     // Sekoituslooppi. Tässä muuttuja i on nykyinen kortti ja index satunnainen kortti.
     // Nämä kortit vaihdetaan keskenään ja tämä tehdään kaikille 52:lle kortille 
-        for (int i = 0; i < deck.length; i++) {
+    
+    for (int i = 0; i < deck.length; i++) {
       
       // palauta liukuluku 0-1 ja skaalaa sen välille, jonka jälkeen tyyppimuutos 
       int index = (int)(Math.random() * deck.length); 
       // ilman vaihtoa tulostuisi aina sama neljän kortin nelikko 
       int temp = deck[i];  // tallenna alkuperäinen kortti
       deck[i] = deck[index]; // // pakassa[i] saa satunnaisen kortin arvon
-      deck[index] = temp; // satunnainen kortti saa alkuperäisen kortin arvon      
+      deck[index] = temp; // satunnainen kortti saa alkuperäisen kortin arvon
+      
     }
     
     // Display the first four cards
