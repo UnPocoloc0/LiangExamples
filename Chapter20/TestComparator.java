@@ -1,6 +1,8 @@
 import java.util.Comparator;
-public class TestComparator {
-      public static void main(String[] args) {
+
+public class TestComparator {
+   
+   public static void main(String[] args) {
             
       GeometricObject g1 = new Rectangle(5, 5);
       GeometricObject g2 = new Circle(5); 
@@ -10,12 +12,14 @@ import java.util.Comparator;
    } // main
    
    // Esimerkkidatalla ympyrän pinta-ala on suurempi
-      public static GeometricObject max(GeometricObject g1, GeometricObject g2, Comparator<GeometricObject> c) {
+   
+   public static GeometricObject max(GeometricObject g1, GeometricObject g2, Comparator<GeometricObject> c) {
       if (c.compare(g1, g2) > 0) 
          return g1;
       else
          return g2;
-   }   }
+   }   
+}
 
 // nämä luokat määritellään ilman julkista määrettä samaan tiedostoon
  abstract class GeometricObject {
