@@ -1,7 +1,8 @@
 import java.util.*;
 
 public class TestQueue {
-		public static void main(String[] args) {
+	
+	public static void main(String[] args) {
 		
 		Queue<String> queue = new LinkedList<>(); 
 		
@@ -13,8 +14,11 @@ public class TestQueue {
 		while (queue.size() > 0)
 		// metodi poistaa jonon ensimmäisen alkion ja palauttaa sen
 		System.out.print(queue.remove() + " ");
-			} }
-/*
+		
+	} 
+}
+
+/*
 1️⃣ YLÄTASON SUUNNITELMA (mitä ohjelma tekee)
 
 Tavoite:
