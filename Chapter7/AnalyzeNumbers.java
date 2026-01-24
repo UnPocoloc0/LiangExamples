@@ -1,17 +1,25 @@
 import java.util.*;
 
 public class AnalyzeNumbers {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+  
+  public static void main(String[] args) {
+    
+    Scanner input = new Scanner(System.in);
     
     // Syötteen avulla taulukon alustus
-        System.out.print("Enter the number of items: ");
+    
+    System.out.print("Enter the number of items: ");
     // Int, koska tällä ei lasketa mitään, tämä on vain alkioiden määrä 
-        int n = input.nextInt();    double [] numbers = new double[n];    double sum = 0;
+    
+    int n = input.nextInt();
+    double [] numbers = new double[n];
+    double sum = 0;
     
     // Varsinaiset int-syötteet välilyönnillä erotettuna
-        System.out.print("Enter the numbers: ");
-    for (int i = 0; i < n; i++) { 
+    
+    System.out.print("Enter the numbers: ");
+
+    for (int i = 0; i < n; i++) { 
       // Ottaa taulukon koon verran syötteitä vastaan ja lisää ne summa-muuttujjaan
       // Täytetään edellisessä vaiheessa alustettu taulukko syötteillä
       numbers[i] = input.nextDouble();
@@ -31,11 +39,13 @@ public class AnalyzeNumbers {
       count++;
       
     }
-        System.out.println("Average is " + average); 
+    
+    System.out.println("Average is " + average); 
     System.out.println("Number of elements above the average is "
       + count);
   }
-  }
+  
+}
 
 /*
 
@@ -175,4 +185,4 @@ Ohjelma lukee n lukua taulukkoon, laskee niiden keskiarvon ja laskee kuinka moni
 */
 
 
-
+
