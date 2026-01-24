@@ -1,7 +1,8 @@
 import java.util.*;
 
 public class TestTreeSetWithComparator {
-public static void main(String[] args) {
+
+public static void main(String[] args) {
 
 
   // Create a tree set for geometric objects using a comparator
@@ -18,7 +19,8 @@ public class TestTreeSetWithComparator {
   
   // TreeSet:n ansiosta saadaan tulostettua järjestyksessä
   for (GeometricObject element : set)
-  System.out.println("area = " + element.getArea());  }
+  System.out.println("area = " + element.getArea());
+  }
 }
 
 // nämä luokat määritellään ilman julkista määrettä samaan tiedostoon
@@ -60,7 +62,8 @@ class GeometricObjectComparator implements Comparator<GeometricObject> {
   public int compare(GeometricObject o1, GeometricObject o2) {
     return Double.compare(o1.getArea(), o2.getArea());
   }
-}  
+}
+  
 /*
   1️⃣ YLÄTASON SUUNNITELMA
   
