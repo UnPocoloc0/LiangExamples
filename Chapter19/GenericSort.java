@@ -1,6 +1,8 @@
 public class GenericSort {
-    public static void main(String[] args) {
-        // Create an Integer array
+  
+  public static void main(String[] args) {
+    
+    // Create an Integer array
     Integer[] intArray = {new Integer(2), new Integer(4), new Integer(3)};
     // Create a Double array
     Double[] doubleArray = {new Double(3.4), new Double(1.3), new Double(-22.1)};
@@ -14,7 +16,8 @@ public class GenericSort {
     sort(doubleArray);
     sort(charArray);
     sort(stringArray);
-        // Display the sorted arrays
+    
+    // Display the sorted arrays
     System.out.print("Sorted Integer objects: "); 
     printList(intArray);
     
@@ -57,7 +60,8 @@ public class GenericSort {
           // päivitetään uusin pienin alkio ja sen indeksi
           currentMin = list[j];
           currentMinIndex = j; 
-        }              }
+        }        
+      }
       // Swap list[i] with list[currentMinIndex] if necessary;
       // jos jäljellä olevan taulukon pienin alkio ei ole paikallaan, niin se vaihdetaan oikeaan paikkaan
       // Seuraava luupin kierros siirtyy seuraavaan indeksiin 
@@ -69,13 +73,15 @@ public class GenericSort {
       
     }
   } // sort
-    /** Print an array of objects */
+  
+  /** Print an array of objects */
   public static void printList(Object[] list) { 
     
     for (int i = 0; i < list.length; i++)
       System.out.print(list[i] + " "); 
       System.out.println();
-      }
+    
+  }
 }
 
 
