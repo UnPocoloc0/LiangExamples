@@ -21,12 +21,14 @@ public class GenericMethodDemo {
     
     for (int i = 0; i < list.length; i++)
     // kaikki listan alkio tulostetaan samalle riville 
-        System.out.print(list[i] + " "); 
+    
+    System.out.print(list[i] + " "); 
     // Seuraava metodikutsun alkiot menevät seuraavalle riville
     System.out.println();
     
   } 
-  }
+  
+}
 
 /*
 🔭 Ylätason yleiskuvaus
