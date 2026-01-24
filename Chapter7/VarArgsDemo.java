@@ -1,12 +1,14 @@
 public class VarArgsDemo {
-    public static void main(String[] args) { 
+  
+  public static void main(String[] args) { 
     // Metodin kutsuminen yksittäisillä argumenteilla
     printMax(34, 3, 3, 2, 56.5); 
     // Varargs:n käy myös taulukko, taulukko luodaan suoraan metodikutsussa. Tästä tulee anonyymi taulukko 
     printMax(new double[]{1, 2, 3});
     // metodikutsu ilman argumentteja
     printMax();
-      } // main
+    
+  } // main
   
   // Metodi vastaanottaa nollasta useaan double-arvoa, tämä sallimme Tonille minkä tahansa määrän argumentteja 
   public static void printMax(double... numbers) { 
@@ -23,7 +25,8 @@ public class VarArgsDemo {
     if (numbers[i] > result)
     result = numbers[i];
     System.out.println("The max value is " + result);
-      } 
+    
+  } 
 } // class
 
 /*
