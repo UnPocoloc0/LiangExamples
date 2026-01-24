@@ -33,11 +33,15 @@ public class BinarySearch {
 			return mid; 
 			// jos key on suurempi, raja vasen puoli pois 
 			else
-				low = mid + 1;		}
+				low = mid + 1;
+		}
 		// Nyt low > high
-				return -low -1; // Now high < low, key not found 
-			}
-	} // class
+		
+		return -low -1; // Now high < low, key not found 
+		
+	}
+	
+} // class
 
 /*
 🔭 Ylätason idea
