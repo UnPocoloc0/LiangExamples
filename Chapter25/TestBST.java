@@ -5,8 +5,10 @@ import javax.xml.transform.*;
 
 // Asiakasluokka
 public class TestBST {
-		public static void main(String[] args) {
-				// Create a BST
+	
+	public static void main(String[] args) {
+		
+		// Create a BST
 		BST<String> tree = new BST<>(); 
 		
 		// puuhun lisääminen 
@@ -54,7 +56,8 @@ public class TestBST {
 		
 		System.out.print("\nPostorder: "); 
 		intTree.postorder();
-	} }
+	} 
+}
 /*
 
 1️⃣ main-metodi (TestBST)
@@ -248,19 +251,32 @@ interface Tree<E> extends Iterable<E> {
 	public boolean insert(E e);
 	
 	/** Delete the specified element from the tree.
-		* Return true if the element is deleted successfully. */
-		public boolean delete(E e);
-		/** Inorder traversal from the root*/
-		public void inorder();
-		/** Postorder traversal from the root */
-		public void postorder();
-		/** Preorder traversal from the root */
-		public void preorder();
-		/** Get the number of nodes in the tree */
-		public int getSize();
-		/** Return true if the tree is empty */
-		public boolean isEmpty();
-	}
+	
+	* Return true if the element is deleted successfully. */
+	
+	public boolean delete(E e);
+	
+	/** Inorder traversal from the root*/
+	
+	public void inorder();
+	
+	/** Postorder traversal from the root */
+	
+	public void postorder();
+	
+	/** Preorder traversal from the root */
+	
+	public void preorder();
+	
+	/** Get the number of nodes in the tree */
+	
+	public int getSize();
+	
+	/** Return true if the tree is empty */
+	
+	public boolean isEmpty();
+	
+}
 /*
 Ylätason suunnitelma
 
@@ -368,18 +384,33 @@ Tämä tekee koodista modulaarista ja uudelleenkäytettävää.
 
 
 abstract class AbstractTree<E>
-implements Tree<E> {
-		@Override /** Inorder traversal from the root*/
-		public void inorder() {
-			}
-		@Override /** Postorder traversal from the root */ 	public void postorder() {
-			}
-		@Override /** Preorder traversal from the root */ 	public void preorder() {
-			}
-		@Override /** Return true if the tree is empty */
-		public boolean isEmpty() {
-				return getSize() == 0;
-	} }
+
+implements Tree<E> {
+	
+	@Override /** Inorder traversal from the root*/
+	
+	public void inorder() {
+		
+	}
+	
+	@Override /** Postorder traversal from the root */ 
+	public void postorder() {
+		
+	}
+	
+	@Override /** Preorder traversal from the root */ 
+	public void preorder() {
+		
+	}
+	
+	@Override /** Return true if the tree is empty */
+	
+
+	public boolean isEmpty() {
+		
+		return getSize() == 0;
+	} 
+}
 
 /*
 Ylätason suunnitelma
@@ -1223,6 +1254,8 @@ tietorakenteiden ajattelu
 👉 Tämä on TRA tiivistettynä yhteen esimerkkiin.
 
 */
-										
 					
-										
+					
+					
+					
+					
