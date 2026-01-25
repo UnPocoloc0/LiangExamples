@@ -44,7 +44,6 @@ public class CountOccurrenceOfWords {
 Tavoite:
 
 Laskea, kuinka monta kertaa kukin sana esiintyy tekstissä
-
 Tallentaa tulos Mapiin, jossa:
 
 avain = sana
@@ -67,13 +66,11 @@ entrySet()	Mahdollistaa avain–arvo-parien iteroinnin
 String text = "Good morning. Have a good class. " +
 				"Have a good visit. Have fun!";
 				
-
 Yksi merkkijono, jossa useita lauseita
 Sisältää välimerkkejä ja isoja kirjaimia
 
 🔹 Mapin luonti
 Map<String, Integer> map = new TreeMap<>();
-
 
 TreeMap:
 
@@ -83,7 +80,6 @@ arvot = lukumäärät
 
 🔹 Tekstin pilkkominen sanoiksi
 String[] words = text.split("[ \n\t\r.,;:!?(){}]");
-
 
 Jakaa tekstin aina, kun vastaan tulee:
 
@@ -97,7 +93,6 @@ Tuloksena taulukko sanoja
 for (int i = 0; i < words.length; i++) {
 	String key = words[i].toLowerCase();
 	
-
 Käydään sanat läpi yksi kerrallaan
 Muutetaan pieniksi kirjaimiksi:
 
@@ -114,7 +109,6 @@ if (key.length() > 0) {
 	}
 }
 
-
 Jos sana ei ole vielä mapissa → lisää arvolla 1
 
 Muuten:
@@ -126,7 +120,6 @@ päivitä map
 for (Map.Entry<String, Integer> entry : map.entrySet())
 	System.out.println(entry.getValue() + "\t" + entry.getKey());
 	
-
 entrySet() antaa avain–arvo-parit
 
 Tulostetaan:
@@ -135,6 +128,7 @@ ensin lukumäärä
 sitten sana
 
 4️⃣ PSEUDOKOODI
+
 teksti ← annettu merkkijono
 map ← uusi TreeMap
 
@@ -192,7 +186,6 @@ Ohjelma laskee sanojen esiintymiskerrat tekstissä käyttäen TreeMapia, jolloin
 🧠 Mitä regex tässä tarkoittaa?
 "[ \n\t\r.,;:!?(){}]"
 
-
 Luonnollisella kielellä:
 
 Jaa teksti osiin aina, kun vastaan tulee
@@ -223,7 +216,6 @@ map on tyyppiä Map<String, Integer>
 entrySet() palauttaa joukon (Set) olioita
 Jokainen alkio on tyyppiä:
 Map.Entry<String, Integer>
-
 
 👉 Yksi Entry = yksi avain–arvo-pari
 
@@ -268,7 +260,6 @@ tapa käsitellä Mapia, kun tarvitaan sekä avain että arvo.
 for (String key : map.keySet()) {
 	System.out.println(map.get(key));
 }
-
 
 Tarvitsee erillisen get()
 Hitaampi
