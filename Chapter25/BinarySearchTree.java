@@ -18,6 +18,7 @@ public class BinarySearchTree<E extends Comparable<E>> {
 		TreeNode<E> right;
 		
 		TreeNode(E element) {
+			
 			this.element = element;
 			left = null;
 			right = null;
@@ -61,8 +62,8 @@ public class BinarySearchTree<E extends Comparable<E>> {
 		}
 		return node; // tämä on välttämätön, koska se varmistaa, että solmu kiinnitetään oikein lapseksi
 		// puu pysyy oikein linkitettynä??
-	}
-}
+	} // Rekursio
+} // class
 	
 /*
 	1️⃣ Ylätason kuvaus
