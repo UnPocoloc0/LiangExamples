@@ -107,7 +107,7 @@ abstract class AbstractGraph<V> implements Graph<V> {
         for (Edge edge : edges) 
         addEdge(edge.u, edge.v);
     }
-    // tässä ylikirjoitetaan rajapinnan metodeita
+    // tässä ylikirjoitetaan rajapinnan metodeita, tässä on muutakin kuin metodin runko 
     @Override 
     public int getSize() { 
         return vertices.size(); 
