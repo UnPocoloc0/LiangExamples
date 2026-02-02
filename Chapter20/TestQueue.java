@@ -16,7 +16,7 @@ public class TestQueue {
 		System.out.print(queue.remove() + " ");
 		
 	} 
-}
+} 
 
 /*
 1️⃣ YLÄTASON SUUNNITELMA (mitä ohjelma tekee)

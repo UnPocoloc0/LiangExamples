@@ -34,11 +34,14 @@ public class BinarySearchTree<E extends Comparable<E>> {
 		while (current != null) {
 			int cmp = element.compareTo(current.element);
 			if (cmp < 0) {
-				current = current.left; // Go left
+				// Go left
+				current = current.left; 
 			} else if (cmp > 0) {
-				current = current.right; // Go right
+				// Go right
+				current = current.right; 
 			} else {
-				return true; // Element matches current.element
+				// Element matches current.element
+				return true; 
 			}
 		}
 		return false; // Element is not in the tree
@@ -63,6 +66,7 @@ public class BinarySearchTree<E extends Comparable<E>> {
 		return node; // tämä on välttämätön, koska se varmistaa, että solmu kiinnitetään oikein lapseksi
 		// puu pysyy oikein linkitettynä??
 	} // Rekursio
+	
 } // class
 	
 /*

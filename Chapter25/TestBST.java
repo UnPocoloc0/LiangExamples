@@ -1233,7 +1233,8 @@ että BST toimii myös Integer-tyypillä
 
 1️⃣4️⃣ Tenttivastaus 1 lauseella
 
-Binäärihakupuu on hierarkkinen tietorakenne, jossa vasemmassa alipuussa on pienemmät ja oikeassa alipuussa suuremmat alkiot, mikä mahdollistaa tehokkaan haun ja järjestetyn traversoinnin.
+Binäärihakupuu on hierarkkinen tietorakenne, jossa vasemmassa alipuussa on pienemmät ja oikeassa alipuussa suuremmat alkiot, 
+mikä mahdollistaa tehokkaan haun ja järjestetyn traversoinnin.
 
 🎯 Miksi tämä on yksi kurssin tärkeimmistä asioista?
 
