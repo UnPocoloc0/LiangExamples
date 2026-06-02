@@ -24,7 +24,7 @@ public class ComputeChange {
             int numberOfPennies = remainingAmount;
             // Display results
             System.out.println("Your amount " + amount + " consists of");
-            System.out.println(" " + numberOfOneDollars + " dollars");      System.out.println(" " + numberOfQuarters + " quarters ");      System.out.println(" " + numberOfDimes + " dimes");      System.out.println(" " + numberOfNickels + " nickels");      System.out.println(" " + numberOfPennies + " pennies");      
+            System.out.println(" " + numberOfOneDollars + " dollars");      System.out.println(" " + numberOfQuarters + " quarters ");      System.out.println(" " + numberOfDimes + " dimes");      System.out.println(" " + numberOfNickels + " nickels");      System.out.println(" " + numberOfPennies + " pennies");      
    } 
 }
 
