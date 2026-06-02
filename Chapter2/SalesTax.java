@@ -1,6 +1,6 @@
 import java.util.Scanner;
-public class SalesTax {
-		public static void main(String[] args) {
+public class SalesTax {
+		public static void main(String[] args) {
 		// Input Stream -> keyboard
 		Scanner input = new Scanner(System.in); 
 		

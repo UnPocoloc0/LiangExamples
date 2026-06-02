@@ -1,6 +1,6 @@
 import java.util.Scanner; // Scanner is in the java.util package 
-public class ComputeAreaWithConstant {
-public static void main(String[] args) {
+public class ComputeAreaWithConstant {
+public static void main(String[] args) {
 
   final double PI = 3.14159; // Declare a constant 
   
@@ -14,5 +14,5 @@ import java.util.Scanner; // Scanner is in the java.util package
   double area = radius * radius * PI;
   // Display result
   System.out.println("The area for the circle of radius " + radius + " is " + area);
-    }}
+    }}
 

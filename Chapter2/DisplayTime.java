@@ -1,7 +1,7 @@
 import java.util.Scanner;
-public class DisplayTime {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+public class DisplayTime {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
     
     // Prompt the user for input 
     System.out.print("Enter an integer for seconds: "); 
@@ -12,5 +12,5 @@ import java.util.Scanner;
     int remainingSeconds = seconds % 60; 
     // Seconds remaining 
     System.out.println(seconds + " seconds is " + minutes + " minutes and " + remainingSeconds + " seconds");
-      }
-  }
+      }
+  }
